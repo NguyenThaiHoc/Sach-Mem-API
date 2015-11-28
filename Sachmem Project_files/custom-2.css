@@ -1,0 +1,449 @@
+@import url(http://fonts.googleapis.com/css?family=Rum+Raisin);
+
+.colorscheme {
+    /*http://www.colorschemer.com/schemes/viewscheme.php?id=1007*/
+    color: #FF3366;
+    color: #FF6633;
+    color: #FFCC33;
+    color: #FF33CC;
+    color: #33CCFF;
+    color: #33CC33;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    line-height: 1.8em;
+    font-size: 2em;
+    min-width: 1024px ! importance;
+    height: 100%;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 480px) {
+    body {
+        zoom: 60%;
+    }
+}
+
+@media (min-width: 768px) {
+    body {
+        zoom: 70%;
+    }
+}
+
+@media (min-width: 992px) {
+    body {
+        zoom: 90%;
+    }
+}
+
+@media (min-width: 1200px) {
+    body {
+        zoom: 100%;
+    }
+}
+
+html {
+    min-width: 1000px ! importance;
+}
+
+h1, h2, h3, h4 {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+* a {
+    color: #009ECE;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.lesson {
+    margin: 10px 10px;
+    display: inline-block;
+    width: 100%;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.lesson:hover {
+    cursor: pointer;
+}
+
+.lesson h2 {
+    font-family: 'Rum Raisin', sans-serif;
+}
+
+.lessons-icon {
+    margin-left: auto;
+    margin-right: auto;
+    width: 60px;
+    height: 60px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.lesson-number {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: white;
+    background-color: #ef6907;
+    text-align: center;
+    font-size: 1.25em;
+    display: none;
+}
+
+/*fixed book page */
+#page {
+    /*height: 700px;*/
+    border: solid thin #999999;
+    border-radius: 4px;
+    padding: 0 0;
+}
+
+#page-content {
+    min-height: 540px;
+    /*height: 540px;*/
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 1.1em;
+    /*border: inset #000099;*/
+}
+
+#slot-container img {
+    border-radius: 15px;
+    border: solid thin lightgrey;
+}
+
+#page-footer {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: none;
+}
+
+#page-footer.navbar {
+    margin: 0;
+}
+
+.title {
+    margin-top: 25px;
+    margin-bottom: .5em;
+    font-size: 1.25em;
+    font-weight: 600;
+    color: #147fce;
+}
+
+.toolbox {
+    background-color: deepskyblue;
+    border: none;
+    font-size: larger;
+}
+
+.toolbox a {
+    margin-bottom: 0;
+    min-width: 150px;
+    border-radius: 15px;
+    cursor: pointer;
+    text-shadow: 2px 2px 2px grey;
+}
+
+.toolbox .pull-right a, .toolbox .pull-left a {
+    min-width: 60px;
+    width: 60px;
+}
+
+.toolbox #start,
+.toolbox #playpause,
+.toolbox #tryagain,
+.toolbox #check {
+    color: yellow;
+}
+
+.toolbox #score {
+    color: white;
+}
+
+.card, .slot, .text-with-slot {
+    display: inline-block;
+    margin: 10px 5px 10px 5px;
+    padding-left: 3px;
+    padding-right: 3px;
+    min-height: 1.6em;
+    line-height: 1.4em;
+    vertical-align: middle;
+}
+
+.card {
+    /*margin-bottom: 6px;*/
+    background-color: #F7D708;
+    color: black;
+    opacity: 0.7;
+    text-align: center;
+    -moz-box-shadow: 3px 3px 3px #888;
+    -webkit-box-shadow: 3px 3px 3px #888;
+    box-shadow: 3px 3px 3px #888;
+}
+
+.speak-vocabulary,
+.speak-sentence-pattern,
+.speak-6-competences {
+    position: absolute;
+    right: -18px;
+    top: 9px;
+}
+
+.speak-sentence-pattern {
+    right: -12px;
+}
+
+.slot {
+    background-color: transparent;
+    border: dotted 2px;
+}
+
+/*conversation*/
+.textConversation {
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    height: 0;
+}
+
+.logo {
+    color: #000099;
+    background-color: #00CCFF;
+    padding: 5px;
+    margin: -5px;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: x-large;
+}
+
+.bg-img {
+    float: left;
+    position: relative;
+}
+
+.text-img {
+    position: absolute;
+}
+
+.footer {
+    margin-top: 45px;
+    padding-top: 5px;
+    border-top: 1px solid #e5e1ea;
+    color: gray;
+}
+
+.number {
+    text-align: center;
+    width: 1.4em;
+    height: 1.4em;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: rgb(81, 189, 31);;
+    color: white;
+}
+
+.breadcrumb {
+    /*background-color: #CCFF00;*/
+    /*background-color: #FFED25;*/
+    font-family: 'Rum Raisin', sans-serif;
+    font-size: larger;
+    margin-left: 0;
+    margin-bottom: 0;
+    color: yellow;
+    background-color: #8cc713;
+}
+
+.breadcrumb a, #page-footer a {
+    color: white;
+}
+
+.navbar-nav {
+    width: 100%;
+    text-align: center;
+}
+
+.navbar-nav > li {
+    float: none;
+    display: inline-block;
+}
+
+/* for five columns */
+.col-xs-15,
+.col-sm-15,
+.col-md-15,
+.col-lg-15 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 8px;
+    padding-left: 8px;
+}
+
+.col-xs-15 {
+    width: 20%;
+    float: left;
+}
+
+@media (min-width: 768px) {
+    .col-sm-15 {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-md-15 {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 1200px) {
+    .col-lg-15 {
+        width: 20%;
+        float: left;
+    }
+}
+
+.toolbox {
+    margin-top: 1em;
+}
+
+.toolbox #score {
+    padding-top: 10px;
+}
+
+.correct, .incorrect {
+    opacity: .8;
+}
+
+.play-button {
+    margin: 0 0;
+    padding: 0 0;
+    font-size: 1.5em;
+    color: #CE0000;
+    text-shadow: 3px 3px 3px grey;
+}
+
+.play-button:hover {
+    cursor: pointer;
+}
+
+.chant-title {
+    font-size: larger;
+    color: #009ECE;
+    font-weight: 600;
+    padding-bottom: 0.5em;
+}
+
+.volume-help {
+    position: relative;
+    color: red;
+}
+
+.bg-chant {
+    background-color: #F5FADC;
+    /*background-image: url('../images/unit12/chantimg.png');*/
+    /*background-repeat: no-repeat;*/
+    /*background-position: center bottom;*/
+    /*background-size: 30%;*/
+}
+
+.img-illustration{
+    width:30%;
+    margin-left:35%;
+}
+
+.bg-text-chant {
+    /*color: black;*/
+    /*text-shadow: 1px 1px 1px blue;*/
+    /*background-color: rgba(255, 245, 215, 0.7);*/
+    /*border-radius: 15px;*/
+    /*box-shadow: 5px 5px 1.5em hsla(0, 0%, 0%, 1.0);*/
+}
+
+.then-listen-phonics-fix {
+    /*right: 24px;*/
+    margin-left: 5px;
+}
+
+.hovered {
+    background-color: lightgrey;
+}
+
+.show-score-dialog {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    box-shadow: 5px 5px 1.5em hsla(0, 0%, 0%, 1.0);
+    height: 50%;
+    width: 50%;
+    margin: auto;
+    margin-top: 10%;
+}
+
+.btn-exit {
+    background-color: white;
+    font-size: 26px;
+    height: 28px;
+    width: 28px;
+    border-radius: 28px;
+    border: solid 1px black;
+    text-align: center;
+}
+
+.btn-exit:hover {
+    cursor: pointer;
+    height: 30%;
+    width: 50%;
+    margin: auto;
+    margin-top: 20%;
+}
+
+.score-content {
+    vertical-align: middle;
+    text-align: center;
+    padding-top: 8%;
+    font-size: 2.5em;
+    color: yellow;
+    text-shadow: 3px 3px 3px grey;
+}
+
+.horizontal-spacing {
+    position: relative;
+    display: block;
+    height: 1em;
+}
+
+.correct .speak-vocabulary,
+.correct .speak-sentence-pattern,
+.correct .speak-6-competences {
+    color: green;
+}
+
+.incorrect .speak-vocabulary,
+.incorrect .speak-sentence-pattern,
+.incorrect .speak-6-competences {
+    color: red;
+}
+
+.question {
+    margin-left: 1em;
+}
+
+.text-with-slot .fa-volume-down {
+    position: absolute;
+    margin-top:5px;
+}

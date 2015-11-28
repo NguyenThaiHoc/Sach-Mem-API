@@ -1,0 +1,117 @@
+.checkbox, .radio {
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+  padding: 0px 0px 0px 40px;
+  background-position: left center;
+}
+
+.checkbox.pos-right, .radio.pos-right {
+  padding: 0px 40px 0px 0px;
+  background-position: right center;
+  text-align: right;
+}
+
+.checkbox.pos-top, .radio.pos-top {
+  padding: 30px 0px 0px 0px;
+  background-position: center top;
+  text-align: center;
+}
+
+.checkbox.pos-bottom, .radio.pos-bottom {
+  padding: 0px 0px 30px 0px;
+  background-position: center bottom;
+  text-align: center;
+}
+
+.checkbox:hover, .radio:hover {
+  cursor: pointer;
+}
+
+.checkbox-default {
+  background-image: url("../icons/checkbox-default.png");
+}
+.checkbox-default.correct {
+  background-image: url("../icons/checkbox-default-correct.png");
+  color: green;
+}
+.checkbox-default.wrong {
+  background-image: url("../icons/checkbox-default-wrong.png");
+  color: red;
+}
+.checkbox-default.active {
+  background-image: url("../icons/checkbox-default-active.png");
+}
+.checkbox-default.active.correct {
+  background-image: url("../icons/checkbox-default-active-correct.png");
+}
+.checkbox-default.active.wrong {
+  background-image: url("../icons/checkbox-default-active-wrong.png");
+}
+
+.radio-default {
+  background-image: url("../icons/checkbox-default.png");
+}
+.radio-default.correct {
+  background-image: url("../icons/checkbox-default-correct.png");
+  color: green;
+}
+.radio-default.wrong {
+  background-image: url("../icons/checkbox-default-wrong.png");
+  color: red;
+}
+.radio-default.active {
+  background-image: url("../icons/checkbox-default-active.png");
+}
+.radio-default.active.correct {
+  background-image: url("../icons/checkbox-default-active-correct.png");
+}
+.radio-default.active.wrong {
+  background-image: url("../icons/checkbox-default-active-wrong.png");
+}
+
+.typing {
+  border: none;
+  outline: none;
+  border-bottom: 1px dashed black;
+  color: blue;
+  text-align: center;
+  background-color: transparent;
+}
+
+.typing:focus {
+  border-color: blue;
+}
+
+.drop {
+  display: inline-block;
+  width: 100px;
+  height: 40px;
+  margin: 10px;
+  border: dashed 1px gray;
+  border-radius: 4px;
+}
+.drop.wrong {
+  color: red;
+  border-color: red;
+}
+.drop.correct {
+  color: green;
+  border-color: green;
+}
+.drag {
+  display: inline-block;
+  width: 100px;
+  height: 40px;
+  margin: 10px;
+  border: dashed 1px blue;
+  border-radius: 4px;
+  text-align: center;
+  background-color: orange;
+}
+.drag:hover {
+  cursor: pointer;
+}
+
+.character + .character{
+  padding-top: 80px;
+}

@@ -1,0 +1,59 @@
+#passage-audio {
+    width: 100%;
+}
+
+#passage-text.speaking {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.autofocus-current-word,
+.playback-rate {
+    font-size: smaller;
+}
+
+.autofocus-current-word label,
+.playback-rate label {
+    font-weight: bold;
+}
+
+q {
+    quotes: "“" "”" "‘" "’";
+}
+
+.section-heading {
+    display: none;
+}
+
+.verse-start {
+    line-height: 0;
+}
+
+.initialized span[data-begin]:focus,
+.initialized span[data-begin]:hover {
+    color: red;
+    outline: none;
+    /*box-shadow: 0 0 4px #FFFFCA;*/
+}
+
+.initialized span[data-begin].speaking {
+    color: #FF33CC;
+    outline: none;
+    text-shadow: 1px 1px 1px black;
+    /*box-shadow: 0 0 4px yellow;*/
+}
+
+.initialized span[data-begin] {
+    cursor: pointer;
+}
+
+.error {
+    color: red;
+}
+
+.initialized span[data-begin].impression.speaking{
+    color: green;
+    font-size: 1.05em;
+}
